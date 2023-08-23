@@ -1,5 +1,13 @@
-### Hi there 👋
+### Diogo Pacheco
+[![GitHub followers](https://img.shields.io/github/followers/swift132.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/dspacheco132?tab=followers)
 
+## Contactos
+
+Sinta-se à vontade para entrar em contato por e-mail:
+
+- E-mail: diogopacheco132@gmail.com
+
+Obrigado pela visita! 😉
 <!--
 **dspacheco132/dspacheco132** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
