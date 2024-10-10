@@ -7,7 +7,7 @@
 
 Sinta-se à vontade para entrar em contato por e-mail:
 
-- E-mail: diogopacheco132@gmail.com
+- E-mail: diogosilvapacheco@enta.pt
 
 Obrigado pela visita! 😉
 <!--
