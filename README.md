@@ -1,6 +1,8 @@
 ### Diogo Pacheco
 [![GitHub followers](https://img.shields.io/github/followers/dspacheco132.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/dspacheco132?tab=followers)
 
+![AWSPROJECT](https://github.com/user-attachments/assets/94cddc6e-107a-4ee0-a96e-58d045d52695)
+
 ## Contactos
 
 Sinta-se à vontade para entrar em contato por e-mail:
