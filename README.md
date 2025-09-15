@@ -1,76 +1,61 @@
 ### Diogo Pacheco
 [![GitHub followers](https://img.shields.io/github/followers/dspacheco132.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/dspacheco132?tab=followers)
 
-# Arquitetura de Rede AWS (PDL-VPC)
+# AWS Network Architecture (PDL-VPC)
 
 ![AWSPROJECT](https://github.com/user-attachments/assets/94cddc6e-107a-4ee0-a96e-58d045d52695)
 
 
-## Descrição Geral
+## General Description
 
-Este projeto descreve uma arquitetura de rede configurada na Amazon Web Services (AWS), onde está implementado numa **VPC (Virtual Private Cloud)** com a faixa de endereços de **10.0.0.0/20**, dentro da região **us-east-1** da AWS. A configuração inclui ainda uma **sub-rede pública** que possui instancias como um Windows Server (WIN SRV) e vários Windows Client (WIN CLI).
+This project describes a network architecture configured on Amazon Web Services (AWS), implemented in a **VPC (Virtual Private Cloud)** with the address range **10.0.0.0/20**, within the **us-east-1** AWS region. The setup also includes a **public subnet** hosting instances such as a Windows Server (WIN SRV) and several Windows Clients (WIN CLI).
 
-## Componentes da Arquitetura
+## Architecture Components
 
 ### 1. **AWS Cloud**
-   - Todo este ambiente está a ser executado na **AWS Cloud**, especificamente na região **us-east-1**.
+   - The entire environment runs on **AWS Cloud**, specifically in the **us-east-1** region.
 
 ### 2. **PDL-VPC (10.0.0.0/20)**
-   - A **VPC** é o ambiente isolado da AWS onde todos os recursos do projeto estão disponiveis.
+   - The **VPC** is the isolated AWS environment where all project resources are available.
 
-### 3. **Sub-rede Pública**
-   - Todos os acessos remotos dentro desta sub-rede são acessíveis diretamente pela internet através de um **Internet Gateway**.
-   - Os principais componentes dentro desta sub-rede são:
-     - **WIN SRV**: Windows Server configurado para serviços como o (IIS) e FTP (FileZilla).
-     - **WIN CLI**: Máquinas Windows Client conectadas ao **Active Directory** (AD) no domínio **enta.pt**.
+### 3. **Public Subnet**
+   - All remote access within this subnet is directly accessible from the internet via an **Internet Gateway**.
+   - The main components within this subnet are:
+     - **WIN SRV**: Windows Server configured for services such as (IIS) and FTP (FileZilla).
+     - **WIN CLI**: Windows Client machines connected to the **Active Directory** (AD) in the **enta.pt** domain.
 
 ### 4. **WIN SRV (Windows Server)**
-   - Este servidor é o principal responsável pelos serviços essenciais tais como:
-     - **IIS**: Servidor web, com HTTP/HTTPS.
-     - **FileZilla**: Servidor FTP que partilha os ficheiros com utilizadores conectados (Maria, Terceira, Corvo), para disponibilizar o diretório do site.
-     - Domínios disponíveis no servidor: **oriental.pt**, **central.pt**, **occidental.pt**.
-     - IP público do servidor: **3.81.242.104**.
+   - This server is mainly responsible for essential services such as:
+     - **IIS**: Web server, with HTTP/HTTPS.
+     - **FileZilla**: FTP server sharing files with connected users (Maria, Terceira, Corvo), providing the site directory.
+     - Domains available on the server: **oriental.pt**, **central.pt**, **occidental.pt**.
+     - Public server IP: **3.81.242.104**.
 
-### 5. **WIN CLI 1, 2, 3 (Clientes Windows)**
-   - Estas máquinas são clientes conectados ao **Active Directory** do servidor. Cada uma tem um IP público:
+### 5. **WIN CLI 1, 2, 3 (Windows Clients)**
+   - These machines are clients connected to the server's **Active Directory**. Each has a public IP:
      - **WIN CLI 1**: 54.162.230.48
      - **WIN CLI 2**: 107.20.194.40
      - **WIN CLI 3**: 3.209.233.185
-   - Estão configuradas para se autenticarem e comunicarem com o **servidor DC | AD** dentro do domínio **enta.pt**.
-
+   - They are configured to authenticate and communicate with the **DC | AD server** within the **enta.pt** domain.
 ### 6. **Active Directory (DC | AD)**
-   - O **DC (Domain Controller)** realiza a autenticação e o acesso dos clientes **WIN CLI**, permitindo o controlo centralizado dos utilizadores e permissões.
+   - The **DC (Domain Controller)** handles authentication and access for **WIN CLI** clients, enabling centralized user and permission management.
 
 ### 7. **Security Group**
-   - Controla o tráfego na rede funcionando como um firewall ao nível das instâncias, permitindo ou negando acessos com base em regras configuradas.
+   - Controls network traffic, acting as a firewall at the instance level, allowing or denying access based on configured rules.
 
 ### 8. **NACL (Network Access Control List)**
-   - Implementado ao nível da sub-rede, controla o tráfego de entrada e saída da sub-rede pública.
+   - Implemented at the subnet level, controls inbound and outbound traffic for the public subnet.
 
 ### 9. **Internet Gateway**
-   - O **Internet Gateway** (IGW) permite que o tráfego da internet aceda aos recursos dentro da **sub-rede pública**. Também permite que as instâncias da sub-rede pública enviem e recebam tráfego da internet.
+   - The **Internet Gateway** (IGW) allows internet traffic to access resources within the **public subnet**. It also enables instances in the public subnet to send and receive internet traffic.
 
-### 10. **Domínio externo (ciberdsp.hopto.org)**
-   - No diagrama tem uma conexão com um domínio externo através do **no-ip** que possibilita a aquisição de 1 hostname, este está direcionado para o IP Publico do Servidor
+### 10. **External Domain (ciberdsp.hopto.org)**
+   - The diagram shows a connection to an external domain via **no-ip**, which allows the acquisition of one hostname, directed to the server's public IP.
 
-## Contactos
+## Contacts
 
-Sinta-se à vontade para entrar em contato por e-mail:
+Feel free to contact me by email:
 
-- E-mail: diogosilvapacheco@enta.pt
+- Email: diogosilvapacheco@enta.pt
 
-Obrigado pela visita! 😉
-<!--
-**dspacheco132/dspacheco132** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Thank you for visiting! �
