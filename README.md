@@ -2,12 +2,6 @@
 
 # 👋 Hello, I'm Diogo Pacheco
 
-## 👨‍💻 About Me
-
-<div align="center">
-
-<img src="https://r2.diogopacheco.com/public/photo-dspacheco.jpeg" alt="Diogo Pacheco" width="200" style="border-radius: 50%; border: 4px solid #3b82f6;">
-
 *Software Developer & Cloud Architect*
 
 </div>
