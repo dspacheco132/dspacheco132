@@ -1,61 +1,124 @@
-### Diogo Pacheco
-[![GitHub followers](https://img.shields.io/github/followers/dspacheco132.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/dspacheco132?tab=followers)
+<div align="center">
 
-# AWS Network Architecture (PDL-VPC)
+# 👋 Hello, I'm Diogo Pacheco
 
-![AWSPROJECT](https://github.com/user-attachments/assets/94cddc6e-107a-4ee0-a96e-58d045d52695)
+## 👨‍💻 About Me
 
+<div align="center">
 
-## General Description
+<img src="https://r2.diogopacheco.com/public/photo-dspacheco.jpeg" alt="Diogo Pacheco" width="200" style="border-radius: 50%; border: 4px solid #3b82f6;">
 
-This project describes a network architecture configured on Amazon Web Services (AWS), implemented in a **VPC (Virtual Private Cloud)** with the address range **10.0.0.0/20**, within the **us-east-1** AWS region. The setup also includes a **public subnet** hosting instances such as a Windows Server (WIN SRV) and several Windows Clients (WIN CLI).
+*Software Developer & Cloud Architect*
 
-## Architecture Components
+</div>
 
-### 1. **AWS Cloud**
-   - The entire environment runs on **AWS Cloud**, specifically in the **us-east-1** region.
+[![Portfolio](https://img.shields.io/badge/Portfolio-diogopacheco.com-FF6B6B?style=for-the-badge&logo=google-chrome&logoColor=white)](https://diogopacheco.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/diogopacheco)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:diogopacheco132@gmail.com)
+[![GitHub](https://img.shields.io/github/followers/dspacheco132?label=Followers&style=for-the-badge&logo=github&color=181717)](https://github.com/dspacheco132)
 
-### 2. **PDL-VPC (10.0.0.0/20)**
-   - The **VPC** is the isolated AWS environment where all project resources are available.
+</div>
 
-### 3. **Public Subnet**
-   - All remote access within this subnet is directly accessible from the internet via an **Internet Gateway**.
-   - The main components within this subnet are:
-     - **WIN SRV**: Windows Server configured for services such as (IIS) and FTP (FileZilla).
-     - **WIN CLI**: Windows Client machines connected to the **Active Directory** (AD) in the **enta.pt** domain.
+---
 
-### 4. **WIN SRV (Windows Server)**
-   - This server is mainly responsible for essential services such as:
-     - **IIS**: Web server, with HTTP/HTTPS.
-     - **FileZilla**: FTP server sharing files with connected users (Maria, Terceira, Corvo), providing the site directory.
-     - Domains available on the server: **oriental.pt**, **central.pt**, **occidental.pt**.
-     - Public server IP: **3.81.242.104**.
+## 🚀 About Me
 
-### 5. **WIN CLI 1, 2, 3 (Windows Clients)**
-   - These machines are clients connected to the server's **Active Directory**. Each has a public IP:
-     - **WIN CLI 1**: 54.162.230.48
-     - **WIN CLI 2**: 107.20.194.40
-     - **WIN CLI 3**: 3.209.233.185
-   - They are configured to authenticate and communicate with the **DC | AD server** within the **enta.pt** domain.
-### 6. **Active Directory (DC | AD)**
-   - The **DC (Domain Controller)** handles authentication and access for **WIN CLI** clients, enabling centralized user and permission management.
+I'm a passionate **Software Developer** and **Cloud Architect** with expertise in building scalable applications, managing cloud infrastructure, and automating workflows. I love working with modern technologies and solving complex problems.
 
-### 7. **Security Group**
-   - Controls network traffic, acting as a firewall at the instance level, allowing or denying access based on configured rules.
+- 🔭 Currently working on **web applications** and **cloud infrastructure** projects
+- 🌱 Learning about **AI/ML integration** and **advanced cloud architectures**
+- 💼 Open to **collaboration** on interesting projects
+- 📫 Reach me at: **diogopacheco132@gmail.com**
 
-### 8. **NACL (Network Access Control List)**
-   - Implemented at the subnet level, controls inbound and outbound traffic for the public subnet.
+---
 
-### 9. **Internet Gateway**
-   - The **Internet Gateway** (IGW) allows internet traffic to access resources within the **public subnet**. It also enables instances in the public subnet to send and receive internet traffic.
+## 🛠️ Tech Stack
 
-### 10. **External Domain (ciberdsp.hopto.org)**
-   - The diagram shows a connection to an external domain via **no-ip**, which allows the acquisition of one hostname, directed to the server's public IP.
+### Languages & Frameworks
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
 
-## Contacts
+### Backend & APIs
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=FastAPI&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Strapi](https://img.shields.io/badge/Strapi-2E7EEA?style=for-the-badge&logo=strapi&logoColor=white)
 
-Feel free to contact me by email:
+### Cloud & Infrastructure
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white)
 
-- Email: diogosilvapacheco@enta.pt
+### DevOps & Tools
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
-Thank you for visiting! �
+### Databases & Storage
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+
+---
+
+## 💼 Featured Projects
+
+### 🌐 Portfolio Project
+**TypeScript | Modern Web Stack**
+- Professional portfolio website showcasing my work and projects
+- [View Project](https://github.com/dspacheco132/project-portfolio)
+
+### 🎙️ Transcriber Whisper API
+**Python | FastAPI | OpenAI Whisper**
+- REST API for audio-to-text transcription using OpenAI Whisper
+- Real-time audio processing with FastAPI
+- [View Project](https://github.com/dspacheco132/transcriber-whisper) ⭐
+
+### 🚀 DevOps & Infrastructure
+- **N8N Production Setup** - Workflow automation with Docker Compose
+- **Strapi Production** - Headless CMS deployment configuration
+- **Supabase Self-Hosting** - Complete Docker Compose setup
+- **Grafana Enterprise** - Monitoring and visualization stack
+
+### 🏗️ Cloud Infrastructure
+- **Terraform Projects** - Infrastructure as Code (IaC)
+- **Kubernetes Testing** - Container orchestration setups
+- **AWS Deployments** - VPC architectures and cloud solutions
+- **Jenkins CI/CD** - Continuous integration pipelines
+
+### 🤖 AI & Automation
+- **N8N Workflows** - Advanced workflow automation
+- **OpenRouter API** - AI model integration projects
+
+---
+
+## 🏆 Achievements
+
+- 🎯 **YOLO Achievement** - GitHub Recognition
+- 🦈 **Pull Shark Achievement** - GitHub Recognition  
+- ⚡ **Quickdraw Achievement** - GitHub Recognition
+
+---
+
+## 🤝 Let's Connect!
+
+I'm always open to discussing new projects, creative ideas, or opportunities to collaborate!
+
+- 💼 **Portfolio**: [diogopacheco.com](https://diogopacheco.com)
+- 📧 **Email**: diogopacheco132@gmail.com
+- 💻 **GitHub**: [@dspacheco132](https://github.com/dspacheco132)
+
+---
+
+<div align="center">
+
+### ⚡ Fun Fact
+> "Code is like humor. When you have to explain it, it's bad." - Cory House
+
+**Thanks for visiting! ⭐**
+
+</div>
